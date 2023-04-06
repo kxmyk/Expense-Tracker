@@ -1,9 +1,9 @@
-import Card from "./Card.jsx";
-import ExpenseItem from "./ExpenseItem.jsx";
+import Card from "../UI/Card.jsx"
+import ExpenseItem from "./ExpenseItem.jsx"
 
 import './Expenses.css'
 
-function Expenses(props) {
+const Expenses = (props) => {
     return (
         <Card className="expenses">
             <ExpenseItem title={props.items[0].title} amount={props.items[0].amount} date={props.items[0].date}/>
@@ -14,4 +14,4 @@ function Expenses(props) {
     )
 }
 
-export default Expenses;
+export default Expenses
